@@ -50,11 +50,10 @@ PRODUCT_BOOT_JARS += \
     htcirlibs
 
 # NFC
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     NfcNci \
     nfc_nci.pn54x.default
 
 # Variant linking script
 PRODUCT_COPY_FILES += \
     device/htc/b2wlj/releasetools/variant_script.sh:install/bin/variant_script.sh
-
