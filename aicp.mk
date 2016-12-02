@@ -16,14 +16,21 @@
 
 $(call inherit-product, device/htc/b2wlj/full_b2wlj.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-PRODUCT_NAME := cm_b2wlj
+# boot animation
+$(call inherit-product, vendor/aicp/configs/bootanimation.mk)
+
+PRODUCT_NAME := aicp_b2wlj
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="htc/HTL23_jp_kdi/htc_b2wlj:4.4.4/KTU84P/515340.5:user/release-keys" \
     PRIVATE_BUILD_DESC="2.14.970.5 CL515340 release-keys"
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Mirenk (Unofficial)"
