@@ -35,6 +35,7 @@ JPN_FELICA_DEVICE := true
 # Kernel
 BOARD_CUSTOM_BOOTIMG_MK := device/htc/b2wlj/mkbootimg.mk
 TARGET_KERNEL_CONFIG := cm_b2wlj_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= device/htc/b2wlj/board-info.txt
@@ -71,4 +72,3 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/b2wlj/releasetools
 
 # Inherit from the proprietary version
 -include vendor/htc/b2wlj/BoardConfigVendor.mk
-
