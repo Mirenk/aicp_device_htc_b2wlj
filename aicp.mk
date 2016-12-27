@@ -28,8 +28,8 @@ $(call inherit-product, vendor/aicp/configs/bootanimation.mk)
 PRODUCT_NAME := aicp_b2wlj
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="htc/HTL23_jp_kdi/htc_b2wlj:4.4.4/KTU84P/515340.5:user/release-keys" \
-    PRIVATE_BUILD_DESC="2.14.970.5 CL515340 release-keys"
+    BUILD_FINGERPRINT="htc/HTL23_jp_kdi/htc_b2wlj:5.0.2/LRX22G/721519.1:user/release-keys" \
+    PRIVATE_BUILD_DESC="3.39.970.1 CL721519 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
