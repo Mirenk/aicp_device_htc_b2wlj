@@ -23,9 +23,6 @@ $(call inherit-product-if-exists, vendor/htc/b2wlj/b2wlj-vendor.mk)
 # Inherit from msm8974-common
 $(call inherit-product, device/htc/msm8974-common/msm8974-common.mk)
 
-# System properties
--include $(LOCAL_PATH)/system_prop.mk
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
